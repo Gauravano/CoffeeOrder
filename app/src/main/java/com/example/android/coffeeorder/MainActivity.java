@@ -16,7 +16,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
     public void submitOrder(View view) {
-        String priceMessage=quantity*5+" dollars for " + quantity+" cups of coffee. Pay up.";
+        int price=quantity*5;
+        String priceMessage= "Total : $" + price;
+        priceMessage=priceMessage+"\nThank You!";
+
         displayMessage(priceMessage);
 
     }
